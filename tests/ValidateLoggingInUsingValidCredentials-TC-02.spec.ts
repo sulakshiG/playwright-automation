@@ -34,7 +34,7 @@ test('ValidateLoggingInUsingValidCredentials', async ({ page }) => {
     await test.step('Enter valid Email address as a credential and click continue button', async () => {
         
         // Fill in the email input field with a valid email address
-        await page.locator("//input[@id='email-input']").fill('smg.2000gunarathna@gmail.com');
+        await page.locator("//input[@id='email-input']").fill('<ENTER EMAIL ADDRESS');
         
         // Click the continue button
         await page.locator("//button[@id='sign-in-btn']").click();
@@ -48,7 +48,7 @@ test('ValidateLoggingInUsingValidCredentials', async ({ page }) => {
     await test.step('Enter the correct password and click continue button', async () => {
         
         // Enter the password into the password input field
-        await page.locator("//input[@id='pass-input']").pressSequentially(',5v+5DVmYV~K}U}');
+        await page.locator("//input[@id='pass-input']").pressSequentially('<ENTER PASSWORD>');
         
         // Click the sign-in button to log in
         await page.locator("//button[@id='password-sign-in-btn']").click();
